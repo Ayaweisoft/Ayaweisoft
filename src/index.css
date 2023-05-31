@@ -1,3 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Montserrat:wght@100;200;300;400;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply font-montserrat;
+    @apply text-dark;
+  }
+  h2 {
+    @apply font-montserrat;
+    @apply text-dark;
+  }
+  h3 {
+    @apply font-inter;
+  }
+  p {
+    @apply font-asap;
+    @apply text-grey-lighter;
+  }
+  li {
+    @apply font-asap;
+  }
+  button {
+    @apply font-inter;
+  }
+}
