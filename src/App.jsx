@@ -361,7 +361,7 @@ function App() {
               <img src={LOGO} alt="logo" className="scale-75" />
               <h2 className='font-bold text-2xl text-dark'>Ayaweisoft</h2>
             </div>
-            <p className=''>Prebör domisaning. Kemkastrering. Fagt kaskade. Bist decissa. Stereodiktisk vasyns att preteng. Mons byning fihör. Pore tolig. Epire kanesk. Monosa medelgam tisk.</p>
+            <p className=''>We are a technology company on a mission to make life easier and society better leveraging on technology solutions.</p>
             <div className="flex gap-3">
               <img className='' src={ball} alt="" />
               <img className='' src={instagram} alt="" />
@@ -387,15 +387,15 @@ function App() {
             <h2 className='font-bold'>Contact</h2>
             <div className="flex justify-center items-center gap-2">
               <img src={phone} alt="" />
-              <p>(406) 555-0120</p>
+              <p>(+234) 8060398968</p>
             </div>
             <div className="flex justify-center items-center gap-2">
               <img src={message} alt="" />
-              <p>kreasi.digital@gmail.com</p>
+              <p>Ayaweisoft@gmail.com</p>
             </div>
             <div className="flex justify-center items-center gap-2">
               <img src={location} alt="" />
-              <p>2972 Westheimer Rd. Santa Ana, Illinois 85486 </p>
+              <p>First Floor Promomaster complex Otiotio, Yenagoa Bayelsa state, Nigeria</p>
             </div>
             <p className='absolute bottom-4'>© 2023 Ayaweisoft. All rights reserved.</p>
           </div>
