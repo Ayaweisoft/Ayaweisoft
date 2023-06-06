@@ -33,6 +33,9 @@ import person2 from './assets/person2.svg'
 import partner1 from './assets/IMG-20230526-WA0082.jpg'
 import partner2 from './assets/IMG-20230526-WA0083.jpg'
 import partner3 from './assets/IMG-20230526-WA0084.jpg'
+import img1 from './assets/ales-nesetril-Im7lZjxeLhg-unsplash.jpg'
+import img2 from './assets/agung-raharja-urbSCgUxfQ0-unsplash.jpg'
+import img3 from './assets/anthony-garand-5sT07dJl65s-unsplash.jpg'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -264,8 +267,9 @@ function App() {
           <h2 className=' leading-[1] font-bold text-3xl md:text-[2.5rem] py-2'>Success Project</h2>
           <p className='text-center w-3/5'>Lörem ipsum astrobel sar direlig. Kronde est konfoni med kelig. Terabel pov astrobel sar direlig.Lörem ipsum astrobel sar direlig. Kronde est </p>
           <div className="flex flex-col md:flex-row gap-6 py-6">
-            <div className="flex flex-1 rounded-3xl h-[539px] justify-center items-end bg-cover bg-center bg-img1 w-fit">
-              <div className="flex flex-col md:flex-row gap-4 pb-6 px-12 items-start md:items-center py-4">
+            <div className="flex relative overflow-hidden flex-1 h-[539px]  rounded-3xl justify-center items-end w-fit">
+              <img className='object-cover h-full w-full absolute' src={img1} alt="" />
+              <div className="flex flex-col z-10 md:flex-row gap-4 pb-6 px-12 items-start md:items-center py-4">
                 <div className="flex flex-col md:w-2/3 gap-4">
                   <h2 className='text-white font-bold text-3xl'>Website Design</h2>
                   <p className='text-off-white'>Lörem ipsum astrobel sar direlig. Kronde est konfoni med kelig. Terabel pov astrobel sar</p>
@@ -274,14 +278,16 @@ function App() {
               </div>
             </div>
             <div className="flex flex-1 flex-col gap-6 justify-between">
-              <div className="flex rounded-3xl p-6 flex-1 items-end bg-cover bg-center bg-img2 w-fit">
-                <div className="flex flex-col gap-3">
+              <div className="flex justify-center relative rounded-3xl flex-1 items-end  overflow-hidden">
+                <img className='object-cover w-full h-full absolute' src={img2} alt="" />
+                <div className="flex z-10 flex-col gap-3 p-6">
                   <h2 className='text-white font-bold text-2xl'>Website Design</h2>
                   <p className='text-off-white'>Lörem ipsum astrobel sar direlig. Kronde est konfoni med kelig. Terabel pov astrobel sar</p>
                 </div>
               </div>
-              <div className="flex rounded-3xl p-6 flex-1 items-end w-fit bg-cover bg-center bg-img3">
-                <div className="flex flex-col gap-3">
+              <div className="flex relative justify-center overflow-hidden rounded-3xl flex-1 items-end w-fit">
+                <img className='object-cover w-full h-full absolute' src={img3} alt="" />
+                <div className="flex flex-col gap-3 z-10 p-6">
                   <h2 className='text-white text-2xl font-bold'>Website Design</h2>
                   <p className='text-off-white'>Lörem ipsum astrobel sar direlig. Kronde est konfoni med kelig. Terabel pov astrobel sar</p>
                 </div>
@@ -396,7 +402,7 @@ function App() {
             </div>
             <div className="flex justify-center items-center gap-2">
               <img src={location} alt="" />
-              <p>First Floor Promomaster complex Otiotio, Yenagoa Bayelsa state, Nigeria</p>
+              <p>First Floor Promo master complex Otiotio, Yenagoa Bayelsa state, Nigeria</p>
             </div>
             <p className=' right-4 absolute bottom-4'>© 2023 Ayaweisoft. All rights reserved.</p>
           </div>
