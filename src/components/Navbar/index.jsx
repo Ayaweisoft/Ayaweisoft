@@ -34,7 +34,7 @@ const Navbar = () => {
           <li><a className='text-grey-light font-medium'>Pricing</a></li>
         </ul>
       </div>
-      <div className="navbar-end">
+      <div className="navbar-end hidden md:flex">
         <Button children="Lets Talk" />
       </div>
     </div>
