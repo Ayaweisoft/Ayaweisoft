@@ -332,12 +332,13 @@ function App() {
           </div>
         </div> */}
 
+        {/* Testimonial */}
         <div className='flex flex-col justify-center items-center gap-2'>
           <p>What our customer say</p>
           <h2 className=' leading-[1] font-bold text-[2.5rem] py-2 '>Testimonial</h2>
           <p className='w-3/5 text-center py-4'>Lörem ipsum astrobel sar direlig. Kronde est konfoni med kelig.</p>
-          <h2 className='text-center leading-10 w-3/5 text-3xl'>Lörem ipsum astrobel sar direlig. Kronde est konfoni med kelig. Terabel pov astrobel sar direlig.Lörem ipsum astrobel sar direlig. Kronde est </h2>
-          <div className="flex flex-col justify-center w-full px-sub text-center py-8 relative">
+          <h2 className='text-center leading-10 p-6 md:w-3/5 text-3xl'>Lörem ipsum astrobel sar direlig. Kronde est konfoni med kelig. Terabel pov astrobel sar direlig.Lörem ipsum astrobel sar direlig. Kronde est </h2>
+          <div className="flex flex-col justify-center w-full px-6 md:px-sub text-center py-8 relative">
             <img className='absolute left-64 -top-4 scale-90' src={quote} alt="" />
             <h2 className='font-bold'>Larry Pageim Fred & Sergey Brin</h2>
             <p className='text-sm font-inter text-dark'>Sr. Director, Brand Marketing</p>
@@ -345,7 +346,7 @@ function App() {
         </div>
 
         <div className="w-full px-4 lg:px-main">
-          <div className="flex w-full bg-green rounded-2xl p-12 justify-between items-center">
+          <div className="flex flex-col md:flex-row gap-4 w-full bg-green rounded-2xl p-6 md:p-12 justify-between items-center">
             <div className="flex flex-col gap-4">
               <h2 className='font-bold text-white text-3xl'>Work Together with Ayaweisoft</h2>
               <p className='text-white w-4/5'>Our company is a very professional company, with friendly service, modern homes and interest-free payments</p>
@@ -397,7 +398,7 @@ function App() {
               <img src={location} alt="" />
               <p>First Floor Promomaster complex Otiotio, Yenagoa Bayelsa state, Nigeria</p>
             </div>
-            <p className='absolute bottom-4'>© 2023 Ayaweisoft. All rights reserved.</p>
+            <p className=' right-4 absolute bottom-4'>© 2023 Ayaweisoft. All rights reserved.</p>
           </div>
         </div>
       </div>
