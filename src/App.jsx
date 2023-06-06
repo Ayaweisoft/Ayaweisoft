@@ -356,7 +356,7 @@ function App() {
         </div>
         
         {/* Footer */}
-        <div className="flex gap-8 relative p-12 px-4 lg:px-main">
+        <div className="flex flex-col md:flex-row gap-8 relative p-12 px-4 lg:px-main">
           <div className="flex flex-col gap-3 flex-1">
             <div className="flex gap-2 items-center">
               <img src={LOGO} alt="logo" className="scale-75" />
