@@ -39,6 +39,12 @@ import img3 from './assets/anthony-garand-5sT07dJl65s-unsplash.jpg'
 
 function App() {
   const [count, setCount] = useState(0)
+  const images = [
+    img1,
+    img2,
+    img3,
+    // Add more image URLs as needed
+  ];
 
   return (
     <>
@@ -307,7 +313,52 @@ function App() {
             </div>
             <Button children={'View Our Project'} inverse={true} />
           </div>
-          <div className="w-full my-8 h-[480px] bg-green"></div>
+          <div className="m-auto py-2 w-[98.8vw] relative gap-y-2 grid place-items-center overflow-hidden h-[480px] bg-[#F2F2F2]">
+            <div className="flex h-full parent">
+              <div className="flex animate-animate gap-2 h-full child">
+                <div className="h-full w-80 bg-red-400 hover:scale-[1.034] hover:shadow-2xl"></div>
+                <div className="h-full w-80 bg-red-300 hover:scale-[1.034] hover:shadow-2xl"></div>
+                <div className="h-full w-80 bg-red-200 hover:scale-[1.034] hover:shadow-2xl"></div>
+                <div className="h-full w-80 bg-red-100 hover:scale-[1.034] hover:shadow-2xl"></div>
+                <div className="h-full w-80 bg-slate-400 hover:scale-[1.034] hover:shadow-2xl"></div>
+                <div className="h-full w-80 bg-slate-300 hover:scale-[1.034] hover:shadow-2xl"></div>
+                <div className="h-full w-80 bg-slate-200 hover:scale-[1.034] hover:shadow-2xl"></div>
+                <div className="h-full w-80 bg-slate-100 hover:scale-[1.034] hover:shadow-2xl"></div>
+              </div>
+              <div className="flex animate-animate gap-2 h-full child">
+                <div className="h-full w-80 bg-red-400 hover:scale-[1.034] hover:shadow-2xl"></div>
+                <div className="h-full w-80 bg-red-300 hover:scale-[1.034] hover:shadow-2xl"></div>
+                <div className="h-full w-80 bg-red-200 hover:scale-[1.034] hover:shadow-2xl"></div>
+                <div className="h-full w-80 bg-red-100 hover:scale-[1.034] hover:shadow-2xl"></div>
+                <div className="h-full w-80 bg-slate-400 hover:scale-[1.034] hover:shadow-2xl"></div>
+                <div className="h-full w-80 bg-slate-300 hover:scale-[1.034] hover:shadow-2xl"></div>
+                <div className="h-full w-80 bg-slate-200 hover:scale-[1.034] hover:shadow-2xl"></div>
+                <div className="h-full w-80 bg-slate-100 hover:scale-[1.034] hover:shadow-2xl"></div>
+              </div>
+            </div>
+            <div className="flex h-full parent">
+              <div className="flex animate-animate-rev gap-2 child h-full">
+                <div className="h-full w-80 bg-red-400 hover:scale-[1.034] hover:shadow-2xl"></div>
+                <div className="h-full w-80 bg-red-300 hover:scale-[1.034] hover:shadow-2xl"></div>
+                <div className="h-full w-80 bg-red-200 hover:scale-[1.034] hover:shadow-2xl"></div>
+                <div className="h-full w-80 bg-red-100 hover:scale-[1.034] hover:shadow-2xl"></div>
+                <div className="h-full w-80 bg-slate-400"></div>
+                <div className="h-full w-80 bg-slate-300"></div>
+                <div className="h-full w-80 bg-slate-200"></div>
+                <div className="h-full w-80 bg-slate-100"></div>
+              </div>
+              <div className="flex animate-animate-rev child gap-2 h-full">
+                <div className="h-full w-80 bg-red-400 hover:scale-[1.034] hover:shadow-2xl"></div>
+                <div className="h-full w-80 bg-red-300 hover:scale-[1.034] hover:shadow-2xl"></div>
+                <div className="h-full w-80 bg-red-200 hover:scale-[1.034] hover:shadow-2xl"></div>
+                <div className="h-full w-80 bg-red-100 hover:scale-[1.034] hover:shadow-2xl"></div>
+                <div className="h-full w-80 bg-slate-400"></div>
+                <div className="h-full w-80 bg-slate-300"></div>
+                <div className="h-full w-80 bg-slate-200"></div>
+                <div className="h-full w-80 bg-slate-100"></div>
+              </div>
+            </div>  
+          </div>
         </div>
 
         {/* Our Team */}
@@ -360,7 +411,7 @@ function App() {
             <Button className={'bg-white border-none rounded-xl py-3 text-green text-sm'} children={'Contact Us'} />
           </div>
         </div>
-        
+
         {/* Footer */}
         <div className="flex flex-col md:flex-row gap-8 relative p-12 px-4 lg:px-main">
           <div className="flex flex-col gap-3 flex-1">

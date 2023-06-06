@@ -26,4 +26,46 @@
   button {
     @apply font-inter;
   }
+  
+}
+
+@layer utilities {
+  .transition-transform {
+    transition-property: transform;
+  }
+  
+  @keyframes animate {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes animate-rev {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes zoom {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.3);
+    }
+  }
+
+  .pause-animation {
+    animation-play-state: paused;
+  }
+
+  .parent:hover .child {
+    animation-play-state: paused;
+  }
 }
