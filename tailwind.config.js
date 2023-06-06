@@ -13,7 +13,9 @@ export default {
         'grey-lighter':"#A7ABB6",
         'green':"#00AC47",
         'grey2':"#f7f7f7",
-        'off-white':"#D1D4DC"
+        'off-white':"#D1D4DC",
+        'blue':"#4A8CFF",
+        'ash': '#B3B3B3'
       },
       padding: {
         'main': '7rem',

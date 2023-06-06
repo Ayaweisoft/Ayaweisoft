@@ -7,6 +7,7 @@ import arrow2 from './assets/curl-arrow2.svg'
 import Button from './components/Button'
 import ball from './assets/ball.svg'
 import semiCircle from './assets/semi-circle.svg'
+import semiCircle2 from './assets/semi-circle2.svg'
 import circleBorder from './assets/circle-border.svg'
 import behance from './assets/behance.svg'
 import instagram from './assets/instagram.svg'
@@ -27,7 +28,14 @@ import phone from './assets/phone.svg'
 import location from './assets/location.svg'
 import clientTrusted from './assets/client-trusted.svg'
 import weeklyGrowth from './assets/weekly-growth.svg'
-
+import person from './assets/person.svg'
+import person2 from './assets/person2.svg'
+import partner1 from './assets/IMG-20230526-WA0082.jpg'
+import partner2 from './assets/IMG-20230526-WA0083.jpg'
+import partner3 from './assets/IMG-20230526-WA0084.jpg'
+import bg1 from './assets/ales-nesetril-Im7lZjxeLhg-unsplash.jpg'
+import bg2 from './assets/bram-naus-n8Qb1ZAkK88-unsplash.jpg'
+import bg3 from './assets/bg.svg'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -35,24 +43,26 @@ function App() {
   return (
     <>
       <div className="flex flex-col justify-center items-center">
-        <Navbar />
-        <div className="flex justify-between items-center mt-20 px-main">
-          <div className="flex flex-col gap-4 justify-center items-center">
+        {/* <Navbar /> */}
+
+        {/* Head */}
+        <div className="flex justify-between items-center mt-20 px-4 lg:px-main">
+          <div className="hidden md:flex flex-col gap-4 justify-center items-center">
             <img src={arrow} alt="" />
             <img className='scale-[1.2]' src={weeklyGrowth} alt="" />
           </div>
           <div className="flex flex-col justify-center gap-3 items-center">
             <h2 className=' text-grey font-montserrat'>Designing With Us</h2>
-            <p className='text-[72px] font-bold leading-extra-tight text-dark text-center font-montserrat'>We build cutting edge solutions</p>
+            <p className='md:text-[72px] text-4xl font-bold leading-extra-tight text-dark text-center font-montserrat'>We build cutting edge solutions</p>
             <p className='text-center w-2/ text-grey font-montserrat'>With us achieving dreams in building your products, together say “Yes” to extraordinary journey </p>
           </div>
-          <div className="flex flex-col gap-4 justify-center items-center">
+          <div className="hidden md:flex gap-4 justify-center items-center">
             <img src={arrow2} alt="" />
             <img className='scale-[1.2]' src={clientTrusted} alt="" />
           </div>
         </div>
 
-        <div className="flex gap-8 justify-center items-center py-10 px-main">
+        <div className="flex flex-col md:flex-row gap-8 justify-center items-center py-10 px-4 lg:px-main">
           <div className="flex justify-center items-center gap-2">
             <span className='h-1 w-1 bg-dark rounded-full'></span>
             <h2 className='text-grey '>UI/UX Design</h2>
@@ -79,11 +89,12 @@ function App() {
           </div>
         </div>
 
-        <div className="flex flex-col justify-start items-center relative w-full h-fit px-main">
+        {/* Social */}
+        <div className="flex flex-col justify-start items-center relative w-full h-fit px-4 lg:px-main">
           <img className='absolute translate-y-3 scale-90 -z-10' src={semiCircle} alt="" />
           <img className='absolute -z-10' src={circleBorder} alt="" />
           <Button children="Start a Project" inverse={true} />
-          <div className="flex justify-center items-center gap-6 py-12">
+          <div className="flex justify-center items-center gap-2 md:gap-6 py-12">
             <div className="p-3 bg-white rounded-full shadow-md">
               <img className='' src={ball} alt="" />
             </div>
@@ -98,24 +109,54 @@ function App() {
             </div>
           </div>
           <h3 className='font-normal text-grey-lighter py-8'>Trusted Partners</h3>
-          <div className="flex gap-8">
-            <div className="h-14 w-48 bg-green"></div>
-            <div className="h-14 w-48 bg-green"></div>
-            <div className="h-14 w-48 bg-green"></div>
+          <div className="flex gap-3 md:gap-16">
+            <div className="overflow-hidden">
+              <img className='h-14' src={partner1} alt="" />
+            </div>
+            <div className="overflow-hidden">
+              <img className='h-14' src={partner2} alt="" />
+            </div>
+            <div className="overflow-hidden">
+              <img className='h-14' src={partner3} alt="" />
+            </div>
           </div>
 
           <h3 className='font-normal text-grey-lighter pt-12 py-8'>Featured Project</h3>
 
-          <div className="flex gap-8">
-            <div className="h-[308px] w-[400px] rounded-3xl bg-green"></div>
-            <div className="h-[308px] w-[400px] rounded-3xl bg-green"></div>
-            <div className="h-[308px] w-[400px] rounded-3xl bg-green"></div>
+          <div className="flex flex-col md:flex-row gap-3 md:gap-8">
+            <div className="flex justify-start items-center h-[308px] w-[400px] px-6 rounded-3xl relative bg-green">
+              <img className='absolute bottom-0 z-10' src={semiCircle2} alt="" />
+              <div className="flex flex-col">
+                <p className='text-white'>Lets Development</p>
+                <h2 className="font-bold text-white w-3/5 text-[2.5rem]">I-Sabi</h2>
+                <p className='text-white w-2/3'>Together we build your Product</p>
+              </div>
+              <img src={person} alt="" className="absolute top-0 right-0 z-20" />
+            </div>
+            <div className="flex justify-start items-center h-[308px] w-[400px] px-6 rounded-3xl relative bg-blue">
+              <img className='absolute bottom-0 z-10' src={semiCircle2} alt="" />
+              <div className="flex flex-col">
+                <p className='text-white'>Lets Development</p>
+                <h2 className="font-bold text-white text-[2.5rem] w-3/5">Work With Us</h2>
+                <p className='text-white w-2/3'>Together we build your Product</p>
+              </div>
+            </div>
+            <div className="flex justify-start items-center h-[308px] w-[400px] px-6 rounded-3xl overflow-hidden relative bg-ash">
+              <img className='absolute bottom-0 z-10' src={semiCircle2} alt="" />
+              <div className="flex flex-col">
+                <p className='text-white'>Lets Development</p>
+                <h2 className="font-bold text-white text-[2.5rem] w-3/5">Work With Us</h2>
+                <p className='text-white w-2/3'>Together we build your Product</p>
+              </div>
+              <img src={person2} alt="" className="absolute top-0 right-0 z-20" />
+            </div>
           </div>
         </div>
 
-        <div className="flex gap-32 py-24 justify-center px-sub2">
+        {/* About */}
+        <div className="flex flex-col md:flex-row gap-4 md:gap-32 py-24 justify-center px-6 md:px-sub2">
           <div className="flex flex-col gap-6 flex-1">
-            <h2 className='font-bold text-[40px]'>About Us</h2>
+            <h2 className='font-bold text-3xl md:text-[2.5rem] text-center md:text-left'>About Us</h2>
             <p>We are a technology company on a mission to make life easier and society better leveraging on technology solutions.</p>
           </div>
           <div className="flex py-3 flex-col gap-6 flex-1">
@@ -135,11 +176,11 @@ function App() {
           <div className="flex flex-col gap-8 flex-1">
             <div className="flex justify-between items-center w-full">
               <div className="flex flex-col gap-2">
-                <h2 className='text-green font-bold text-[40px] '>200+</h2>
+                <h2 className='text-green font-bold text-[2.5rem] '>200+</h2>
                 <p>Complete project</p>
               </div>
               <div className="flex flex-col gap-2">
-                <h2 className='text-green font-bold text-[40px] '>200+</h2>
+                <h2 className='text-green font-bold text-[2.5rem] '>200+</h2>
                 <p>Complete project</p>
               </div>
             </div>
@@ -149,10 +190,11 @@ function App() {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center px-sub2 items-center">
-          <h2 className="font-bold text-[40px] text-dark">Services / Products</h2>
+        {/* Services */}
+        <div className="flex flex-col justify-center px-6 md:px-sub2 items-center">
+          <h2 className="font-bold text-3xl md:text-[2.5rem] text-dark">Services / Products</h2>
           <p className=''>Our services and products include</p>
-          <div className="grid grid-cols-3 gap-x-24 gap-y-14 py-12">
+          <div className="flex flex-col gap-6 md:grid grid-cols-3 gap-x-24 gap-y-14 py-12">
             <div className="flex flex-col items-start gap-4">
               <div className="flex justify-center p-4 rounded-3xl items-center shadow-slate-200 shadow-md bg-grey2">
                 <img className='scale-[0.8]' src={tv} alt="" />
@@ -198,32 +240,36 @@ function App() {
           </div>
         </div>
 
-        <div className="flex items-center gap-20 px-sub">
+        {/* Why choose us */}
+        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-20 px-6 md:px-sub">
           <div className="flex flex-col gap-4">
             <p>Why Choose us</p>
-            <h2 className=' leading-[1] font-bold text-[40px]'>Fast and Quality Work is our focus</h2>
+            <h2 className=' leading-[1] font-bold text-3xl md:text-[2.5rem]'>Fast and Quality Work is our focus</h2>
             <p>Lörem ipsum astrobel sar direlig. Kronde est konfoni med kelig. Terabel pov astrobel sar direlig.</p>
           </div>
           <img className='scale-75' src={timeline} alt="" srcset="" />
         </div>
-        <div className="flex flex-row-reverse items-center gap-20 px-sub">
+
+        {/* Who we are */}
+        <div className="flex flex-col md:flex-row-reverse items-center gap-6 md:gap-20 px-5 md:px-sub">
           <div className="flex flex-col gap-4 items-start">
             <p>Who We are</p>
-            <h2 className=' leading-[1] font-bold text-[40px]'>Trusted 100% by many people Gradually</h2>
+            <h2 className=' leading-[1] font-bold text-3xl md:text-[2.5rem]'>Trusted 100% by many people Gradually</h2>
             <p>Lörem ipsum astrobel sar direlig. Kronde est konfoni med kelig. Terabel pov astrobel sar direlig.Lörem ipsum astrobel sar direlig. Kronde est konfoni med kelig. Terabel pov astrobel sar direlig.</p>
             <Button children={'Lets Work'} inverse={true} />
           </div>
           <img className='scale-75' src={pics} alt="" srcset="" />
         </div>
 
-        <div className="flex flex-col gap-4 justify-center items-center px-sub">
+        {/*Portfolio */}
+        <div className="flex flex-col gap-4 justify-center items-center px-5 md:px-sub">
           <p>Portfolio</p>
-          <h2 className=' leading-[1] font-bold text-[40px] py-2'>Success Project</h2>
+          <h2 className=' leading-[1] font-bold text-3xl md:text-[2.5rem] py-2'>Success Project</h2>
           <p className='text-center w-3/5'>Lörem ipsum astrobel sar direlig. Kronde est konfoni med kelig. Terabel pov astrobel sar direlig.Lörem ipsum astrobel sar direlig. Kronde est </p>
-          <div className="flex gap-6 py-6">
+          <div className="flex flex-col md:flex-row gap-6 py-6">
             <div className="flex flex-1 rounded-3xl h-[539px] justify-center items-end bg-black w-fit">
-              <div className="flex gap-4 pb-6 px-12 items-center">
-                <div className="flex flex-col w-2/3 gap-4">
+              <div className="flex flex-col md:flex-row gap-4 pb-6 px-12 items-start md:items-center">
+                <div className="flex flex-col md:w-2/3 gap-4">
                   <h2 className='text-white font-bold text-3xl'>Website Design</h2>
                   <p className='text-off-white'>Lörem ipsum astrobel sar direlig. Kronde est konfoni med kelig. Terabel pov astrobel sar</p>
                 </div>
@@ -248,11 +294,11 @@ function App() {
           <Button children={'View Our Project'} inverse={true} />
         </div>
 
-        <div className="flex flex-col gap-4 relative"> 
+        <div className="flex flex-col gap-4 relative">
           <div className="flex justify-between items-center px-sub">
             <div className="flex flex-col justify-center items-start flex-1 gap-4">
               <p>Inspiration</p>
-              <h2 className=' leading-[1] font-bold text-[40px] py-2'>UI Design Exploration</h2>
+              <h2 className=' leading-[1] font-bold text-[2.5rem] py-2'>UI Design Exploration</h2>
               <p className='w-3/5'>Lörem ipsum astrobel sar direlig. Kronde est konfoni med kelig. Terabel pov astrobel sar direlig.Lörem ipsum astrobel sar direlig. Kronde est </p>
             </div>
             <Button children={'View Our Project'} inverse={true} />
@@ -260,9 +306,10 @@ function App() {
           <div className="w-full my-8 h-[480px] bg-green"></div>
         </div>
 
-        <div className="flex flex-col justify-center items-center">
+        {/* Our Team */}
+        {/* <div className="flex flex-col justify-center items-center">
           <p>Meet the creatives</p>
-          <h2 className=' leading-[1] font-bold text-[40px] py-2'>Our Team</h2>
+          <h2 className=' leading-[1] font-bold text-[2.5rem] py-2'>Our Team</h2>
           <div className="flex gap-8 py-8">
             <div className="flex flex-col justify-center items-center">
               <div className="w-64 h-64 bg-black rounded-3xl"></div>
@@ -285,21 +332,21 @@ function App() {
               <p className='text-dark font-inter text-sm'>Ceo</p>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className='flex flex-col justify-center items-center gap-2'>
           <p>What our customer say</p>
-          <h2 className=' leading-[1] font-bold text-[40px] py-2 '>Testimonial</h2>
+          <h2 className=' leading-[1] font-bold text-[2.5rem] py-2 '>Testimonial</h2>
           <p className='w-3/5 text-center py-4'>Lörem ipsum astrobel sar direlig. Kronde est konfoni med kelig.</p>
           <h2 className='text-center leading-10 w-3/5 text-3xl'>Lörem ipsum astrobel sar direlig. Kronde est konfoni med kelig. Terabel pov astrobel sar direlig.Lörem ipsum astrobel sar direlig. Kronde est </h2>
           <div className="flex flex-col justify-center w-full px-sub text-center py-8 relative">
-            <img className='absolute left-64 -top-4 scale-90'  src={quote} alt="" />
+            <img className='absolute left-64 -top-4 scale-90' src={quote} alt="" />
             <h2 className='font-bold'>Larry Pageim Fred & Sergey Brin</h2>
             <p className='text-sm font-inter text-dark'>Sr. Director, Brand Marketing</p>
           </div>
         </div>
 
-        <div className="w-full px-main">
+        <div className="w-full px-4 lg:px-main">
           <div className="flex w-full bg-green rounded-2xl p-12 justify-between items-center">
             <div className="flex flex-col gap-4">
               <h2 className='font-bold text-white text-3xl'>Work Together with Ayaweisoft</h2>
@@ -309,11 +356,11 @@ function App() {
           </div>
         </div>
 
-        <div className="flex gap-8 relative p-12 px-main">
+        <div className="flex gap-8 relative p-12 px-4 lg:px-main">
           <div className="flex flex-col gap-3 flex-1">
             <div className="flex gap-2 items-center">
-                <img src={LOGO} alt="logo" className="scale-75" />
-                <h2 className='font-bold text-2xl text-dark'>Ayaweisoft</h2>
+              <img src={LOGO} alt="logo" className="scale-75" />
+              <h2 className='font-bold text-2xl text-dark'>Ayaweisoft</h2>
             </div>
             <p className=''>Prebör domisaning. Kemkastrering. Fagt kaskade. Bist decissa. Stereodiktisk vasyns att preteng. Mons byning fihör. Pore tolig. Epire kanesk. Monosa medelgam tisk.</p>
             <div className="flex gap-3">
