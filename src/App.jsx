@@ -33,9 +33,6 @@ import person2 from './assets/person2.svg'
 import partner1 from './assets/IMG-20230526-WA0082.jpg'
 import partner2 from './assets/IMG-20230526-WA0083.jpg'
 import partner3 from './assets/IMG-20230526-WA0084.jpg'
-import bg1 from './assets/ales-nesetril-Im7lZjxeLhg-unsplash.jpg'
-import bg2 from './assets/bram-naus-n8Qb1ZAkK88-unsplash.jpg'
-import bg3 from './assets/bg.svg'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -43,7 +40,7 @@ function App() {
   return (
     <>
       <div className="flex flex-col justify-center items-center">
-        {/* <Navbar /> */}
+        <Navbar />
 
         {/* Head */}
         <div className="flex justify-between items-center mt-20 px-4 lg:px-main">
@@ -62,7 +59,7 @@ function App() {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-8 justify-center items-center py-10 px-4 lg:px-main">
+        <div className="flex flex-wrap gap-8 justify-center items-center py-10 px-4 lg:px-main">
           <div className="flex justify-center items-center gap-2">
             <span className='h-1 w-1 bg-dark rounded-full'></span>
             <h2 className='text-grey '>UI/UX Design</h2>
@@ -267,8 +264,8 @@ function App() {
           <h2 className=' leading-[1] font-bold text-3xl md:text-[2.5rem] py-2'>Success Project</h2>
           <p className='text-center w-3/5'>Lörem ipsum astrobel sar direlig. Kronde est konfoni med kelig. Terabel pov astrobel sar direlig.Lörem ipsum astrobel sar direlig. Kronde est </p>
           <div className="flex flex-col md:flex-row gap-6 py-6">
-            <div className="flex flex-1 rounded-3xl h-[539px] justify-center items-end bg-black w-fit">
-              <div className="flex flex-col md:flex-row gap-4 pb-6 px-12 items-start md:items-center">
+            <div className="flex flex-1 rounded-3xl h-[539px] justify-center items-end bg-cover bg-center bg-img1 w-fit">
+              <div className="flex flex-col md:flex-row gap-4 pb-6 px-12 items-start md:items-center py-4">
                 <div className="flex flex-col md:w-2/3 gap-4">
                   <h2 className='text-white font-bold text-3xl'>Website Design</h2>
                   <p className='text-off-white'>Lörem ipsum astrobel sar direlig. Kronde est konfoni med kelig. Terabel pov astrobel sar</p>
@@ -277,13 +274,13 @@ function App() {
               </div>
             </div>
             <div className="flex flex-1 flex-col gap-6 justify-between">
-              <div className="flex rounded-3xl p-6 flex-1 items-end bg-black w-fit">
+              <div className="flex rounded-3xl p-6 flex-1 items-end bg-cover bg-center bg-img2 w-fit">
                 <div className="flex flex-col gap-3">
                   <h2 className='text-white font-bold text-2xl'>Website Design</h2>
                   <p className='text-off-white'>Lörem ipsum astrobel sar direlig. Kronde est konfoni med kelig. Terabel pov astrobel sar</p>
                 </div>
               </div>
-              <div className="flex rounded-3xl p-6 flex-1 items-end bg-black w-fit">
+              <div className="flex rounded-3xl p-6 flex-1 items-end w-fit bg-cover bg-center bg-img3">
                 <div className="flex flex-col gap-3">
                   <h2 className='text-white text-2xl font-bold'>Website Design</h2>
                   <p className='text-off-white'>Lörem ipsum astrobel sar direlig. Kronde est konfoni med kelig. Terabel pov astrobel sar</p>
@@ -294,10 +291,11 @@ function App() {
           <Button children={'View Our Project'} inverse={true} />
         </div>
 
-        <div className="flex flex-col gap-4 relative">
-          <div className="flex justify-between items-center px-sub">
-            <div className="flex flex-col justify-center items-start flex-1 gap-4">
-              <p>Inspiration</p>
+        {/* Inspiration */}
+        <div className="flex flex-col gap-4 mt-8 relative">
+          <div className="flex flex-col md:flex-row gap-3 justify-between items-center px-6 md:px-sub">
+            <div className="flex flex-col justify-center items-start flex-1 md:gap-4">
+              <p className='text-center md:text-left w-full'>Inspiration</p>
               <h2 className=' leading-[1] font-bold text-[2.5rem] py-2'>UI Design Exploration</h2>
               <p className='w-3/5'>Lörem ipsum astrobel sar direlig. Kronde est konfoni med kelig. Terabel pov astrobel sar direlig.Lörem ipsum astrobel sar direlig. Kronde est </p>
             </div>
@@ -355,7 +353,8 @@ function App() {
             <Button className={'bg-white border-none rounded-xl py-3 text-green text-sm'} children={'Contact Us'} />
           </div>
         </div>
-
+        
+        {/* Footer */}
         <div className="flex gap-8 relative p-12 px-4 lg:px-main">
           <div className="flex flex-col gap-3 flex-1">
             <div className="flex gap-2 items-center">
@@ -370,7 +369,7 @@ function App() {
               <img className='' src={linkedin} alt="" />
             </div>
           </div>
-          <div className="flex flex-col gap-3 flex-1">
+          {/* <div className="flex flex-col gap-3 flex-1">
             <h2 className='font-bold'>Home</h2>
             <p>Beranda</p>
             <p>Program Kialiun</p>
@@ -383,7 +382,7 @@ function App() {
             <p>Program Kialiun</p>
             <p>Gallery</p>
             <p>Our News</p>
-          </div>
+          </div> */}
           <div className="flex flex-col gap-3 justify-start items-start flex-1">
             <h2 className='font-bold'>Contact</h2>
             <div className="flex justify-center items-center gap-2">

@@ -29,6 +29,10 @@ export default {
       },
       backgroundImage: {
         'bg1': "url('src/assets/bg.svg')",
+        'img1': "url('src/assets/ales-nesetril-Im7lZjxeLhg-unsplash.jpg')",
+        'img2': "url('src/assets/agung-raharja-urbSCgUxfQ0-unsplash.jpg')",
+        'img3': "url('src/assets/anthony-garand-5sT07dJl65s-unsplash.jpg')",
+
       },
       lineHeight: {
         'extra-tight': '1.1',
