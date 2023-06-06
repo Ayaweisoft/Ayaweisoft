@@ -121,8 +121,8 @@ function App() {
           <h3 className='font-normal text-grey-lighter pt-12 py-8'>Featured Project</h3>
 
           <div className="flex flex-col md:flex-row gap-3 md:gap-8">
-            <div className="flex justify-start items-center h-[308px] w-[400px] px-6 rounded-3xl relative bg-green">
-              <img className='absolute bottom-0 z-10' src={semiCircle2} alt="" />
+            <div className="flex justify-start items-center h-[19.25rem] w-[22rem] px-6 rounded-3xl relative bg-green">
+              <img className='absolute bottom-0 z-10 -translate-x-6' src={semiCircle2} alt="" />
               <div className="flex flex-col">
                 <p className='text-white'>Lets Development</p>
                 <h2 className="font-bold text-white w-3/5 text-[2.5rem]">I-Sabi</h2>
@@ -130,16 +130,16 @@ function App() {
               </div>
               <img src={person} alt="" className="absolute top-0 right-0 z-20" />
             </div>
-            <div className="flex justify-start items-center h-[308px] w-[400px] px-6 rounded-3xl relative bg-blue">
-              <img className='absolute bottom-0 z-10' src={semiCircle2} alt="" />
+            <div className="flex justify-start items-center h-[19.25rem] w-[22rem] px-6 rounded-3xl relative bg-blue">
+              <img className='absolute bottom-0 z-10 -translate-x-6' src={semiCircle2} alt="" />
               <div className="flex flex-col">
                 <p className='text-white'>Lets Development</p>
                 <h2 className="font-bold text-white text-[2.5rem] w-3/5">Work With Us</h2>
                 <p className='text-white w-2/3'>Together we build your Product</p>
               </div>
             </div>
-            <div className="flex justify-start items-center h-[308px] w-[400px] px-6 rounded-3xl overflow-hidden relative bg-ash">
-              <img className='absolute bottom-0 z-10' src={semiCircle2} alt="" />
+            <div className="flex justify-start items-center h-[19.25rem] w-[22rem] px-6 rounded-3xl overflow-hidden relative bg-ash">
+              <img className='absolute bottom-0 z-10 -translate-x-6' src={semiCircle2} alt="" />
               <div className="flex flex-col">
                 <p className='text-white'>Lets Development</p>
                 <h2 className="font-bold text-white text-[2.5rem] w-3/5">Work With Us</h2>
