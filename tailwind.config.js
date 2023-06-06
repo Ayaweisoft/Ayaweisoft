@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin');
 export default {
   content: [
     "./index.html",
@@ -41,9 +42,25 @@ export default {
       animation: {
         button_click: 'wiggle 200ms ease-in-out',
         slideIn: 'slideIn 0.3s linear infinite',
+        animate: 'animate 15s linear infinite',
+        'animate-rev': 'animate-rev 15s linear infinite',
+        zoom: 'zoom 0.3s linear',
       }
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [
+    require("daisyui"),
+    plugin(function({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          'translate-z': (value) => ({
+            '--tw-translate-z': value,
+            transform: ` translate3d(var(--tw-translate-x), var(--tw-translate-y), var(--tw-translate-z)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))`,
+          }), // this is actual CSS
+        },
+        { values: theme('translate'), supportsNegativeValues: true }
+      )
+    })
+  ],
 }
 
