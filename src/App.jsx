@@ -36,6 +36,10 @@ import partner3 from './assets/IMG-20230526-WA0084.jpg'
 import img1 from './assets/ales-nesetril-Im7lZjxeLhg-unsplash.jpg'
 import img2 from './assets/agung-raharja-urbSCgUxfQ0-unsplash.jpg'
 import img3 from './assets/anthony-garand-5sT07dJl65s-unsplash.jpg'
+import alicat from './assets/alicat.png'
+import alicat2 from './assets/alicat2.png'
+import nlcdpc from './assets/nlcdpc.png'
+import nlcdpc2 from './assets/nlcdpc2.png'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -46,13 +50,20 @@ function App() {
     // Add more image URLs as needed
   ];
 
+  const photos = [  
+    alicat,
+    alicat2,
+    nlcdpc,
+    nlcdpc2
+  ]
+
   return (
     <>
       <div className="flex flex-col justify-center items-center bg-white">
         <Navbar />
 
         {/* Head */}
-        <div className="flex justify-between items-center mt-20 px-4 lg:px-main">
+        <div id='home' className="flex justify-between items-center mt-20 px-4 lg:px-main">
           <div className="hidden md:flex flex-col gap-4 justify-center items-center">
             <img src={arrow} alt="" />
             <img className='scale-[1.2]' src={weeklyGrowth} alt="" />
@@ -160,7 +171,7 @@ function App() {
         </div>
 
         {/* About */}
-        <div className="flex flex-col md:flex-row gap-4 md:gap-32 py-24 justify-center px-6 md:px-sub2">
+        <div id="about" className="flex flex-col md:flex-row gap-4 md:gap-32 pt-16 md:pt-24 justify-center px-6 md:px-sub2">
           <div className="flex flex-col gap-6 flex-1">
             <h2 className='font-bold text-3xl md:text-[2.5rem] text-center md:text-left'>About Us</h2>
             <p>We are a technology company on a mission to make life easier and society better leveraging on technology solutions.</p>
@@ -197,7 +208,7 @@ function App() {
         </div>
 
         {/* Services */}
-        <div className="flex flex-col justify-center px-6 md:px-sub2 items-center">
+        <div id="service" className="flex flex-col justify-center pt-16 md:pt-24 px-6 md:px-sub2 items-center">
           <h2 className="font-bold text-3xl md:text-[2.5rem] text-dark">Services / Products</h2>
           <p className=''>Our services and products include</p>
           <div className="flex flex-col gap-6 md:grid grid-cols-3 gap-x-24 gap-y-14 py-12">
@@ -247,7 +258,7 @@ function App() {
         </div>
 
         {/* Why choose us */}
-        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-20 px-6 md:px-sub">
+        <div className="flex flex-col md:flex-row items-center pt-16 md:pt-24 gap-6 md:gap-20 px-6 md:px-sub">
           <div className="flex flex-col gap-4">
             <p>Why Choose us</p>
             <h2 className=' leading-[1] font-bold text-3xl md:text-[2.5rem]'>Fast and Quality Work is our focus</h2>
@@ -257,7 +268,7 @@ function App() {
         </div>
 
         {/* Who we are */}
-        <div className="flex flex-col md:flex-row-reverse items-center gap-6 md:gap-20 px-5 md:px-sub">
+        <div className="flex flex-col md:flex-row-reverse pt-16 md:pt-24 items-center gap-6 md:gap-20 px-5 md:px-sub">
           <div className="flex flex-col gap-4 items-start">
             <p>Who We are</p>
             <h2 className=' leading-[1] font-bold text-3xl md:text-[2.5rem]'>Trusted 100% by many people Gradually</h2>
@@ -268,7 +279,7 @@ function App() {
         </div>
 
         {/*Portfolio */}
-        <div className="flex flex-col gap-4 justify-center items-center px-5 md:px-sub">
+        <div id="portfolio" className="flex flex-col pt-16 md:pt-24 gap-4 justify-center items-center px-5 md:px-sub">
           <p>Portfolio</p>
           <h2 className=' leading-[1] font-bold text-3xl md:text-[2.5rem] py-2'>Success Project</h2>
           <p className='text-center w-3/5'>Lörem ipsum astrobel sar direlig. Kronde est konfoni med kelig. Terabel pov astrobel sar direlig.Lörem ipsum astrobel sar direlig. Kronde est </p>
@@ -304,7 +315,7 @@ function App() {
         </div>
 
         {/* Inspiration */}
-        <div className="flex flex-col gap-4 mt-8 relative">
+        <div className="flex flex-col pt-16 md:pt-24 gap-4 mt-8 relative">
           <div className="flex flex-col md:flex-row gap-3 justify-between items-center px-6 md:px-sub">
             <div className="flex flex-col justify-center items-start flex-1 md:gap-4">
               <p className='text-center md:text-left w-full'>Inspiration</p>
@@ -314,48 +325,44 @@ function App() {
             <Button children={'View Our Project'} inverse={true} />
           </div>
           <div className="m-auto py-2 w-[98.8vw] relative gap-y-2 grid place-items-center overflow-hidden h-[480px] bg-[#F2F2F2]">
-            <div className="flex h-full parent">
+            <div className="flex gap-2 h-full parent">
               <div className="flex animate-animate gap-2 h-full child">
-                <div className="h-full w-80 bg-red-400 hover:scale-[1.034] hover:shadow-2xl"></div>
-                <div className="h-full w-80 bg-red-300 hover:scale-[1.034] hover:shadow-2xl"></div>
-                <div className="h-full w-80 bg-red-200 hover:scale-[1.034] hover:shadow-2xl"></div>
-                <div className="h-full w-80 bg-red-100 hover:scale-[1.034] hover:shadow-2xl"></div>
-                <div className="h-full w-80 bg-slate-400 hover:scale-[1.034] hover:shadow-2xl"></div>
-                <div className="h-full w-80 bg-slate-300 hover:scale-[1.034] hover:shadow-2xl"></div>
-                <div className="h-full w-80 bg-slate-200 hover:scale-[1.034] hover:shadow-2xl"></div>
-                <div className="h-full w-80 bg-slate-100 hover:scale-[1.034] hover:shadow-2xl"></div>
+                {
+                  photos.map((photo, index) => (
+                      <div key={index} className="h-full w-80 hover:scale-[1.034] hover:shadow-2xl">
+                        <img className='object-cover h-full w-full' src={photo} alt="" />
+                      </div>
+                  ))
+                }
               </div>
               <div className="flex animate-animate gap-2 h-full child">
-                <div className="h-full w-80 bg-red-400 hover:scale-[1.034] hover:shadow-2xl"></div>
-                <div className="h-full w-80 bg-red-300 hover:scale-[1.034] hover:shadow-2xl"></div>
-                <div className="h-full w-80 bg-red-200 hover:scale-[1.034] hover:shadow-2xl"></div>
-                <div className="h-full w-80 bg-red-100 hover:scale-[1.034] hover:shadow-2xl"></div>
-                <div className="h-full w-80 bg-slate-400 hover:scale-[1.034] hover:shadow-2xl"></div>
-                <div className="h-full w-80 bg-slate-300 hover:scale-[1.034] hover:shadow-2xl"></div>
-                <div className="h-full w-80 bg-slate-200 hover:scale-[1.034] hover:shadow-2xl"></div>
-                <div className="h-full w-80 bg-slate-100 hover:scale-[1.034] hover:shadow-2xl"></div>
+                {
+                  photos.map((photo, index) => (
+                      <div key={index} className="h-full w-80 hover:scale-[1.034] hover:shadow-2xl">
+                        <img className='object-cover h-full w-full' src={photo} alt="" />
+                      </div>
+                  ))
+                }
               </div>
             </div>
-            <div className="flex h-full parent">
+            <div className="flex h-full gap-2 parent">
               <div className="flex animate-animate-rev gap-2 child h-full">
-                <div className="h-full w-80 bg-red-400 hover:scale-[1.034] hover:shadow-2xl"></div>
-                <div className="h-full w-80 bg-red-300 hover:scale-[1.034] hover:shadow-2xl"></div>
-                <div className="h-full w-80 bg-red-200 hover:scale-[1.034] hover:shadow-2xl"></div>
-                <div className="h-full w-80 bg-red-100 hover:scale-[1.034] hover:shadow-2xl"></div>
-                <div className="h-full w-80 bg-slate-400"></div>
-                <div className="h-full w-80 bg-slate-300"></div>
-                <div className="h-full w-80 bg-slate-200"></div>
-                <div className="h-full w-80 bg-slate-100"></div>
+                {
+                  photos.map((photo, index) => (
+                      <div key={index} className="h-full w-80 hover:scale-[1.034] hover:shadow-2xl">
+                        <img className='object-cover h-full w-full' src={photo} alt="" />
+                      </div>
+                  ))
+                }
               </div>
               <div className="flex animate-animate-rev child gap-2 h-full">
-                <div className="h-full w-80 bg-red-400 hover:scale-[1.034] hover:shadow-2xl"></div>
-                <div className="h-full w-80 bg-red-300 hover:scale-[1.034] hover:shadow-2xl"></div>
-                <div className="h-full w-80 bg-red-200 hover:scale-[1.034] hover:shadow-2xl"></div>
-                <div className="h-full w-80 bg-red-100 hover:scale-[1.034] hover:shadow-2xl"></div>
-                <div className="h-full w-80 bg-slate-400"></div>
-                <div className="h-full w-80 bg-slate-300"></div>
-                <div className="h-full w-80 bg-slate-200"></div>
-                <div className="h-full w-80 bg-slate-100"></div>
+                {
+                  photos.map((photo, index) => (
+                      <div key={index} className="h-full w-80 hover:scale-[1.034] hover:shadow-2xl">
+                        <img className='object-cover h-full w-full' src={photo} alt="" />
+                      </div>
+                  ))
+                }
               </div>
             </div>  
           </div>
@@ -390,7 +397,7 @@ function App() {
         </div> */}
 
         {/* Testimonial */}
-        <div className='flex flex-col justify-center items-center gap-2'>
+        <div className='flex flex-col pt-16 md:pt-24 justify-center items-center gap-2'>
           <p>What our customer say</p>
           <h2 className=' leading-[1] font-bold text-[2.5rem] py-2 '>Testimonial</h2>
           <p className='w-3/5 text-center py-4'>Lörem ipsum astrobel sar direlig. Kronde est konfoni med kelig.</p>
@@ -402,7 +409,7 @@ function App() {
           </div>
         </div>
 
-        <div className="w-full px-4 lg:px-main">
+        <div className="w-full pt-16 md:pt-24  px-4 lg:px-main">
           <div className="flex flex-col md:flex-row gap-4 w-full bg-green rounded-2xl p-6 md:p-12 justify-between items-center">
             <div className="flex flex-col gap-4">
               <h2 className='font-bold text-white text-3xl'>Work Together with Ayaweisoft</h2>
@@ -413,7 +420,7 @@ function App() {
         </div>
 
         {/* Footer */}
-        <div className="flex flex-col md:flex-row gap-8 relative p-12 px-4 lg:px-main">
+        <div className="flex flex-col md:flex-row pt-16 md:pt-24 gap-8 relative p-12 px-4 lg:px-main">
           <div className="flex flex-col gap-3 flex-1">
             <div className="flex gap-2 items-center">
               <img src={LOGO} alt="logo" className="scale-75" />

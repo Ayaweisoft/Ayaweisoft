@@ -14,9 +14,9 @@ const Navbar = () => {
             <li><a className='text-dark font-bold'>Home</a></li>
             <li><a className='text-grey-light font-medium'>About Us</a></li>
             <li><a className='text-grey-light font-medium'>Services</a></li>
-            <li><a className='text-grey-light font-medium'>Team</a></li>
+            {/* <li><a className='text-grey-light font-medium'>Team</a></li> */}
             <li><a className='text-grey-light font-medium'>Portfolio</a></li>
-            <li><a className='text-grey-light font-medium'>Pricing</a></li>
+            {/* <li><a className='text-grey-light font-medium'>Pricing</a></li> */}
           </ul>
         </div>
         <div className="flex gap-2 items-center">
@@ -26,12 +26,12 @@ const Navbar = () => {
       </div>
       <div className="navbar-center hidden lg:flex ">
         <ul className="menu menu-horizontal px-1">
-          <li><a className='text-dark font-bold'>Home</a></li>
-          <li><a className='text-grey-light font-medium'>About Us</a></li>
-          <li><a className='text-grey-light font-medium'>Services</a></li>
-          <li><a className='text-grey-light font-medium'>Team</a></li>
-          <li><a className='text-grey-light font-medium'>Portfolio</a></li>
-          <li><a className='text-grey-light font-medium'>Pricing</a></li>
+          <li><a className='text-dark font-bold' href='#home'>Home</a></li>
+          <li><a className='text-grey-light font-medium' href='#about'>About Us</a></li>
+          <li><a className='text-grey-light font-medium' href='#service'>Services</a></li>
+          {/* <li><a className='text-grey-light font-medium'>Team</a></li> */}
+          <li><a className='text-grey-light font-medium' href='#portfolio'>Portfolio</a></li>
+          {/* <li><a className='text-grey-light font-medium'>Pricing</a></li> */}
         </ul>
       </div>
       <div className="navbar-end hidden md:flex">

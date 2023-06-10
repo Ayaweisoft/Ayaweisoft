@@ -26,6 +26,10 @@
   button {
     @apply font-inter;
   }
+
+  html {
+    @apply scroll-smooth
+  }
   
 }
 
