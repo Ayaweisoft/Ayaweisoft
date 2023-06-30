@@ -262,7 +262,7 @@ function App() {
           <div className="flex flex-col gap-4">
             <p>Why Choose us</p>
             <h2 className=' leading-[1] font-bold text-3xl md:text-[2.5rem]'>Fast and Quality Work is our focus</h2>
-            <p>Lörem ipsum astrobel sar direlig. Kronde est konfoni med kelig. Terabel pov astrobel sar direlig.</p>
+            <p>Cutting-edge software solutions tailored to your needs,</p>
           </div>
           <img className='scale-75' src={timeline} alt="" srcset="" />
         </div>
@@ -272,7 +272,7 @@ function App() {
           <div className="flex flex-col gap-4 items-start">
             <p>Who We are</p>
             <h2 className=' leading-[1] font-bold text-3xl md:text-[2.5rem]'>Trusted 100% by many people Gradually</h2>
-            <p>Lörem ipsum astrobel sar direlig. Kronde est konfoni med kelig. Terabel pov astrobel sar direlig.Lörem ipsum astrobel sar direlig. Kronde est konfoni med kelig. Terabel pov astrobel sar direlig.</p>
+            <p>We are a passionate team of software professionals dedicated to delivering innovative solutions that drive business success. With expertise in cutting-edge technology, user-centric design, and a commitment to client satisfaction, we transform businesses through top-notch software solutions. </p>
             <Button children={'Lets Work'} inverse={true} />
           </div>
           <img className='scale-75' src={pics} alt="" srcset="" />
@@ -282,14 +282,14 @@ function App() {
         <div id="portfolio" className="flex flex-col pt-16 md:pt-24 gap-4 justify-center items-center px-5 md:px-sub">
           <p>Portfolio</p>
           <h2 className=' leading-[1] font-bold text-3xl md:text-[2.5rem] py-2'>Success Project</h2>
-          <p className='text-center w-3/5'>Lörem ipsum astrobel sar direlig. Kronde est konfoni med kelig. Terabel pov astrobel sar direlig.Lörem ipsum astrobel sar direlig. Kronde est </p>
+          <p className='text-center w-3/5'>Our portfolio showcases our expertise and the successful projects we have delivered. With a diverse range of industries and clients, we have a proven track record of providing top-notch solutions that drive business growth and success. Explore our portfolio to see how our innovative software solutions have made a positive impact for our clients.</p>
           <div className="flex flex-col md:flex-row gap-6 py-6">
             <div className="flex relative overflow-hidden flex-1 h-[539px]  rounded-3xl justify-center items-end w-fit">
               <img className='object-cover h-full w-full absolute' src={img1} alt="" />
               <div className="flex flex-col z-10 md:flex-row gap-4 pb-6 px-12 items-start md:items-center py-4">
                 <div className="flex flex-col md:w-2/3 gap-4">
                   <h2 className='text-white font-bold text-3xl'>Website Design</h2>
-                  <p className='text-off-white'>Lörem ipsum astrobel sar direlig. Kronde est konfoni med kelig. Terabel pov astrobel sar</p>
+                  <p className='text-off-white'>User-centric design for intuitive and engaging experiences</p>
                 </div>
                 <Button className={'border-white text-white px-6 py-[0.8rem]'} children={'Lets work'} inverse={false} />
               </div>
@@ -298,15 +298,15 @@ function App() {
               <div className="flex justify-center relative rounded-3xl flex-1 items-end  overflow-hidden">
                 <img className='object-cover w-full h-full absolute' src={img2} alt="" />
                 <div className="flex z-10 flex-col gap-3 p-6">
-                  <h2 className='text-white font-bold text-2xl'>Website Design</h2>
-                  <p className='text-off-white'>Lörem ipsum astrobel sar direlig. Kronde est konfoni med kelig. Terabel pov astrobel sar</p>
+                  <h2 className='text-white font-bold text-2xl'>UI/UX Design</h2>
+                  <p className='text-off-white'>Intuitive user interfaces for seamless navigation and enhanced usability</p>
                 </div>
               </div>
               <div className="flex relative justify-center overflow-hidden rounded-3xl flex-1 items-end w-fit">
                 <img className='object-cover w-full h-full absolute' src={img3} alt="" />
                 <div className="flex flex-col gap-3 z-10 p-6">
                   <h2 className='text-white text-2xl font-bold'>Website Design</h2>
-                  <p className='text-off-white'>Lörem ipsum astrobel sar direlig. Kronde est konfoni med kelig. Terabel pov astrobel sar</p>
+                  <p className='text-off-white'>Proven track record of delivering successful website projects for a diverse range of clients</p>
                 </div>
               </div>
             </div>
@@ -320,7 +320,7 @@ function App() {
             <div className="flex flex-col justify-center items-start flex-1 md:gap-4">
               <p className='text-center md:text-left w-full'>Inspiration</p>
               <h2 className=' leading-[1] font-bold text-[2.5rem] py-2'>UI Design Exploration</h2>
-              <p className='w-3/5'>Lörem ipsum astrobel sar direlig. Kronde est konfoni med kelig. Terabel pov astrobel sar direlig.Lörem ipsum astrobel sar direlig. Kronde est </p>
+              <p className='w-3/5'>Step into a realm where art and technology merge, and witness the transformative power of innovative thinking. Immerse yourself in a collection of stunning visuals that evoke emotions and leave a lasting impression.</p>
             </div>
             <Button children={'View Our Project'} inverse={true} />
           </div>
@@ -400,11 +400,11 @@ function App() {
         <div className='flex flex-col pt-16 md:pt-24 justify-center items-center gap-2'>
           <p>What our customer say</p>
           <h2 className=' leading-[1] font-bold text-[2.5rem] py-2 '>Testimonial</h2>
-          <p className='w-3/5 text-center py-4'>Lörem ipsum astrobel sar direlig. Kronde est konfoni med kelig.</p>
-          <h2 className='text-center leading-10 p-6 md:w-3/5 text-3xl'>Lörem ipsum astrobel sar direlig. Kronde est konfoni med kelig. Terabel pov astrobel sar direlig.Lörem ipsum astrobel sar direlig. Kronde est </h2>
+          <p className='w-3/5 text-center py-4'>We Usually satisfy our customers.</p>
+          <h2 className='text-center leading-10 p-6 md:w-3/5 text-3xl'>I am extremely satisfied with the website developed by Ayaweisoft. Their team listened attentively to our requirements and delivered a visually appealing and functional website that surpassed our expectations. The website has helped us attract more visitors and generate valuable leads. The ongoing support they provide is exceptional. I wholeheartedly recommend Ayaweisoft for anyone seeking a reliable and talented web development partner.</h2>
           <div className="flex flex-col justify-center w-full px-6 md:px-sub text-center py-8 relative">
             <img className='absolute left-64 -top-4 scale-90' src={quote} alt="" />
-            <h2 className='font-bold'>Larry Pageim Fred & Sergey Brin</h2>
+            <h2 className='font-bold'>Larry George Fred & Melford Brin</h2>
             <p className='text-sm font-inter text-dark'>Sr. Director, Brand Marketing</p>
           </div>
         </div>
