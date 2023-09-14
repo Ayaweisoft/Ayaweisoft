@@ -1,7 +1,4 @@
-import { useState } from 'react'
 import './App.css'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import Navbar from './components/Navbar'
 import arrow from './assets/curl-arrow.svg'
 import arrow2 from './assets/curl-arrow2.svg'
@@ -37,26 +34,12 @@ import partner3 from './assets/IMG-20230526-WA0084.jpg'
 import img1 from './assets/ales-nesetril-Im7lZjxeLhg-unsplash.jpg'
 import img2 from './assets/agung-raharja-urbSCgUxfQ0-unsplash.jpg'
 import img3 from './assets/anthony-garand-5sT07dJl65s-unsplash.jpg'
-import alicat from './assets/alicat.png'
-import alicat2 from './assets/alicat2.png'
-import nlcdpc from './assets/nlcdpc.png'
-import nlcdpc2 from './assets/nlcdpc2.png'
+// import alicat from './assets/alicat.png'
+// import alicat2 from './assets/alicat2.png'
+// import nlcdpc from './assets/nlcdpc.png'
+// import nlcdpc2 from './assets/nlcdpc2.png'
 
 function App() {
-  const [count, setCount] = useState(0)
-  const images = [
-    img1,
-    img2,
-    img3,
-    // Add more image URLs as needed
-  ];
-
-  const photos = [  
-    alicat,
-    alicat2,
-    nlcdpc,
-    nlcdpc2
-  ]
 
   return (
     <>
@@ -111,7 +94,7 @@ function App() {
         <div className="relative flex flex-col items-center justify-start w-full px-4 h-fit lg:px-main">
           <img className='absolute scale-90 translate-y-3 -z-10' src={semiCircle} alt="" />
           <img className='absolute -z-10' src={circleBorder} alt="" />
-          <Button children="Start a Project" inverse={true} />
+          <Button inverse={true}>Start a Project</Button>
           <div className="flex items-center justify-center gap-2 py-12 md:gap-6">
             <div className="p-3 bg-white rounded-full shadow-md">
               <img className='' src={ball} alt="" />
@@ -179,7 +162,7 @@ function App() {
           </div>
           <div className="flex flex-col flex-1 gap-6 py-3">
             <div className="flex gap-3">
-              <img src={tick} alt="" srcset="" />
+              <img src={tick} alt="" />
               <h2 className='text-xl font-bold'>Our Vision</h2>
             </div>
             <p>Our vision is to be the leading technology company providing tech solutions that makes life easier and society better.</p>
@@ -265,7 +248,7 @@ function App() {
             <h2 className=' leading-[1] font-bold text-3xl md:text-[2.5rem]'>Fast and Quality Work is our focus</h2>
             <p>Cutting-edge software solutions tailored to your needs,</p>
           </div>
-          <img className='scale-75' src={timeline} alt="" srcset="" />
+          <img className='scale-75' src={timeline} alt="" />
         </div>
 
         {/* Who we are */}
@@ -274,9 +257,9 @@ function App() {
             <p>Who We are</p>
             <h2 className=' leading-[1] font-bold text-3xl md:text-[2.5rem]'>Trusted 100% by many people Gradually</h2>
             <p>We are a passionate team of software professionals dedicated to delivering innovative solutions that drive business success. With expertise in cutting-edge technology, user-centric design, and a commitment to client satisfaction, we transform businesses through top-notch software solutions. </p>
-            <Button children={'Lets Work'} inverse={true} />
+            <Button inverse={true}>Lets Work</Button>
           </div>
-          <img className='scale-75' src={pics} alt="" srcset="" />
+          <img className='scale-75' src={pics} alt="" />
         </div>
 
         {/*Portfolio */}
@@ -292,7 +275,7 @@ function App() {
                   <h2 className='text-3xl font-bold text-white'>Website Design</h2>
                   <p className='text-off-white'>User-centric design for intuitive and engaging experiences</p>
                 </div>
-                <Button className={'border-white text-white px-6 py-[0.8rem]'} children={'Lets work'} inverse={false} />
+                <Button className={'border-white text-white px-6 py-[0.8rem]'} inverse={false}>Lets work</Button>
               </div>
             </div>
             <div className="flex flex-col justify-between flex-1 gap-6">
@@ -312,7 +295,7 @@ function App() {
               </div>
             </div>
           </div>
-          <Button children={'View Our Project'} inverse={true} />
+          <Button inverse={true}>View Our Project</Button>
         </div>
 
         {/* Inspiration */}
@@ -323,7 +306,7 @@ function App() {
               <h2 className=' leading-[1] font-bold text-[2.5rem] py-2'>UI Design Exploration</h2>
               <p className='w-3/5'>Step into a realm where art and technology merge, and witness the transformative power of innovative thinking. Immerse yourself in a collection of stunning visuals that evoke emotions and leave a lasting impression.</p>
             </div>
-            <Button children={'View Our Project'} inverse={true} />
+            <Button inverse={true}>View Our Project</Button>
           </div>
           {/* <div className="m-auto py-2 w-[98.8vw] relative gap-y-2 grid place-items-center overflow-hidden h-[480px] bg-[#F2F2F2]">
             <div className="flex h-full gap-2 parent">
@@ -416,7 +399,7 @@ function App() {
               <h2 className='text-3xl font-bold text-white'>Work Together with Ayaweisoft</h2>
               <p className='w-4/5 text-white'>Our company is a very professional company, with friendly service, modern homes and interest-free payments</p>
             </div>
-            <Button className={'bg-white border-none rounded-xl py-3 text-green text-sm'} children={'Contact Us'} />
+            <Button className={'bg-white border-none rounded-xl py-3 text-green text-sm'}>Contact Us</Button>
           </div>
         </div>
 
