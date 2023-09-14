@@ -126,30 +126,30 @@ function App() {
 
           <div className="grid gap-3 md:grid-cols-3 md:gap-8">
             <div className="flex justify-start items-center h-[19.25rem] w-full px-6 rounded-3xl relative bg-green">
-              <img className='absolute bottom-0 z-10 -translate-x-6' src={semiCircle2} alt="" />
-              <div className="flex flex-col">
+              <img className='absolute bottom-0 -translate-x-6 z-1' src={semiCircle2} alt="" />
+              <div className="relative z-10 flex flex-col">
                 <p className='text-white'>Lets Development</p>
                 <h2 className="font-bold text-white w-3/5 text-[2.5rem]">I-Sabi</h2>
                 <p className='w-2/3 text-white'>Together we build your Product</p>
               </div>
-              <img src={person} alt="" className="absolute top-0 right-0 z-20" />
+              <img src={person} alt="" className="absolute top-0 right-0 -z-1" />
             </div>
             <div className="flex justify-start items-center h-[19.25rem] w-full px-6 rounded-3xl relative bg-blue">
-              <img className='absolute bottom-0 z-10 -translate-x-6' src={semiCircle2} alt="" />
-              <div className="flex flex-col">
+              <img className='absolute bottom-0 -translate-x-6 z-1' src={semiCircle2} alt="" />
+              <div className="relative z-10 flex flex-col ">
                 <p className='text-white'>Lets Development</p>
                 <h2 className="font-bold text-white text-[2.5rem] w-3/5">Work With Us</h2>
                 <p className='w-2/3 text-white'>Together we build your Product</p>
               </div>
             </div>
             <div className="flex justify-start items-center h-[19.25rem] w-full px-6 rounded-3xl overflow-hidden relative bg-ash">
-              <img className='absolute bottom-0 z-10 -translate-x-6' src={semiCircle2} alt="" />
-              <div className="flex flex-col">
+              <img className='absolute bottom-0 -translate-x-6 z-1' src={semiCircle2} alt="" />
+              <div className="relative z-10 flex flex-col ">
                 <p className='text-white'>Lets Development</p>
                 <h2 className="font-bold text-white text-[2.5rem] w-3/5">Work With Us</h2>
                 <p className='w-2/3 text-white'>Together we build your Product</p>
               </div>
-              <img src={person2} alt="" className="absolute top-0 right-0 z-20" />
+              <img src={person2} alt="" className="absolute top-0 right-0 z-1" />
             </div>
           </div>
         </div>
